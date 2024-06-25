@@ -20,7 +20,7 @@ function App() {
       text: inputValue,
       completed: false,
     };
-    const updatedTodoList = [...todoList, newTodo];
+    const updatedTodoList = [newTodo, ...todoList];
     setTodoList(updatedTodoList);
     setInputValue("");
     localStorage.setItem("todoList", JSON.stringify(updatedTodoList));
