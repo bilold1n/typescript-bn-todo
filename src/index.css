@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* styles.css */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  main {
+    flex-grow: 1;
+  }
+
+  .active {
+    width: 69.34px;
+    height: 36px;
+    top: 8px;
+    left: 8px;
+    padding: 8px 15.8px 8px 16px;
+    background: #021431;
+    display: none;
+  }
+  .containerr {
+    padding: 10px;
+    box-shadow: 0px 8px 10px -6px #0000001a;
+    box-shadow: 0px 20px 25px -1px #0000001a;
+  }
+}
+.container {
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.orab {
+  display: flex;
+  justify-content: space-between;
+}
+.otab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.salomorab {
+}
+@media (max-width: 1280px) {
+  .orab {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 988px) {
+  .otab {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 830px) {
+  .mycarusel {
+    display: none;
+  }
+  .mytitle {
+    font-size: 29px;
+    width: 300px;
+  }
+  .mydesc {
+    font-size: 20px;
+    width: 390px;
+  }
+  .myhr {
+    width: 350px;
+  }
+  .myhrq {
+    width: 350px;
+  }
+  .subtotal {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .orab89 {
+    width: 380px;
+  }
+}
+@media (max-width: 658px) {
+  .otab {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .home {
+    width: 500px;
+  }
+}
+@media (max-width: 640px) {
+  .salomorab {
+    width: 350px;
+  }
+  .orabbtn {
+    flex-direction: column;
+  }
+  .paginationbtn {
+    justify-content: center;
+  }
+  .salomsa {
+    width: 400px;
+    padding-bottom: 20px;
+  }
+}
